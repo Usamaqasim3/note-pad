@@ -12,6 +12,7 @@ const CreateNote = (props) => {
       const {name, value}= event.target;
         setNote((prevData)=>{
           return {
+
             ...prevData,
             [name]: value,
           }
@@ -19,11 +20,15 @@ const CreateNote = (props) => {
         ) 
     }
     const addEvent=()=>{
+      if (note.title && note.content){
           props.passNote(note);
           setNote({
             title:'',
             content:''
           });
+        } else{
+          alert("please fill out required fields")
+        }
     }
   return (
     <>

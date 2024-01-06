@@ -21,6 +21,9 @@
   width: 500px;
   padding: 15px 10px 5px 10px;
   margin: 20px auto;
+  box-shadow: 0 2px 5px;
+  border-radius: 7px;
+
 }
 .my_notes h1{
   color: #34495e;
@@ -130,4 +133,18 @@ footer{
   width: 100%;
   position: absolute;
   bottom: 0;
+}
+@media (max-width: 500px){
+ .main_note{
+  width: 20rem;
+ }
+
+ .MuiButton-root .plus_sign{
+  font-size: 45px !important;
+  font-weight: 900;
+  color: #f4b000 ;
+  cursor: pointer;
+  
+  background: transparent;
+}
 }
